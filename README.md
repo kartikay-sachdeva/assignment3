@@ -7,3 +7,4 @@ Otto, M. (2022) Bootstrap, Getbootstrap.com. URL: https://getbootstrap.com/ npm 
 OpenJS Foundation (2017) Express - Node.js web application framework, Expressjs.com. URL: https://expressjs.com/ 
 Font Awesome 5 (2017) Font Awesome 5, Fontawesome.com. Font Awesome 5. URL: https://fontawesome.com/ 
 Bootstrap 5 Navigation Bars (no date) www.w3schools.com
+Clock Icon. URL: https://fontawesome.com/icons/clock?f=classic&s=solid
