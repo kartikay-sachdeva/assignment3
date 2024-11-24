@@ -1,0 +1,67 @@
+<%- include ../partials/header.ejs %>
+<%- include ../partials/main_nav.ejs %>
+
+<!-- Content for the Edit page -->
+<div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+            <h1><%= title %></h1>
+
+            <form class="form" method="POST">
+                <div class="form-group">
+                    <label for="AssignmentTextField">Workout</label>
+                    <input type="text" class="form-control"
+                    id="AssignmentTextField"
+                    placeholder="Enter your Assignment Title"
+                    name="Assignment"
+                    value="<%= assign.Assignment %>"
+                    required>
+                </div>
+
+                <div class="form-group">
+                    <label for="DescriptionTextField">Description</label>
+                    <input type="text" class="form-control"
+                    id="DescriptionTextField"
+                    placeholder="Enter your description"
+                    name="Description" 
+                    value="<%= assign.Description %>"
+                    required>
+                </div>
+
+                <div class="form-group">
+                    <label for="DueDateTextField">Due Date</label>
+                    <input type="text" class="form-control"
+                    id="DueDateTextField"
+                    placeholder="Enter your due date"
+                    name="DueDate" 
+                    value="<%= assign.DueDate %>"
+                    required>
+                </div>
+
+                <div class="form-group">
+                    <label for="StatusTextField">Status</label>
+                    <input type="text" class="form-control"
+                    id="StatusTextField"
+                    placeholder="Enter your status"
+                    name="Status" 
+                    value="<%= assign.Status %>"
+                    required>
+                </div>
+
+
+                <br>
+
+                <button class="btn btn-primary" type="submit">
+                <i class="fas fa-edit"></i> Submit</button>
+                
+                <a href="/assignlist" class="btn btn-warning">
+                <i class="fas fa-undo"></i> Cancel</a>
+
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<% include ../partials/bottom_nav.ejs %>
+<% include ../partials/footer.ejs %>

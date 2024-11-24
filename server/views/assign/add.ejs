@@ -1,0 +1,59 @@
+<%- include ../partials/header.ejs %>
+<%- include ../partials/main_nav.ejs %>
+
+<!-- Content for the Add page -->
+<div class="container">
+    <div class="row">
+        <div class="offset-md-3 col-md-6">
+            <h1><%= title %></h1>
+
+            <form class="form" method="POST">
+                <div class="form-group">
+                    <label for="AssignmentTextField">Assignment Title</label>
+                    <input type="text" class="form-control"
+                    id="AssignmentTextField"
+                    placeholder="Enter your Assignment Title"
+                    name="Assignment" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="DescriptionTextField">Description</label>
+                    <input type="text" class="form-control"
+                    id="DescriptionTextField"
+                    placeholder="Enter Description"
+                    name="Description" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="DueDateTextField">Due Date</label>
+                    <input type="text" class="form-control"
+                    id="DueDateTextField"
+                    placeholder="Enter the due date"
+                    name="DueDate" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="StatusTextField">Status</label>
+                    <input type="text" class="form-control"
+                    id="StatusTextField"
+                    placeholder="Enter the assignment status"
+                    name="Status" required>
+                </div>
+
+
+                <br>
+
+                <button class="btn btn-primary" type="submit">
+                <i class="fas fa-edit"></i> Submit</button>
+                
+                <a href="/assignlist" class="btn btn-warning">
+                <i class="fas fa-undo"></i> Cancel</a>
+
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<% include ../partials/bottom_nav.ejs %>
+<% include ../partials/footer.ejs %>
