@@ -43,7 +43,7 @@ module.exports.processAddPage = async (req, res, next) => {
 
         await newAssign.save();
 
-        res.redirect('/assignlist'); // Redirect to the assignlist page after adding a assignout
+        res.redirect('/assignlist'); // Redirect to the assignlist page after adding a assignment
     } catch (error) {
         console.error(error);
         res.render('assign/list', {

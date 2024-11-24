@@ -40,7 +40,6 @@ body {
   background-size: cover; /* Adjusts the size as needed */
   background-position: center; /* Adjusts the position as needed */
   background-repeat: no-repeat;
-  background-image: url('Assets/images/pexels-pixabay-355770.jpg');
 }
 
 #Home h1 {
@@ -80,4 +79,10 @@ body {
 .social-link {
   margin: 0 10px; /* Adds space on both sides of the link */
   color: rgb(255, 255, 255); /* Sets link color to white */
+}
+
+.table {
+  width: 100%; /* Adjusts to full container width */
+  border-collapse: collapse; /* Removes spacing between cells */
+  margin: 20px 0; /* Adds spacing above and below the table */
 }
