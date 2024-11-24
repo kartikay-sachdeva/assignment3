@@ -9,6 +9,7 @@ require('dotenv').config(); // Load .env file
 let mongoose = require('mongoose')
 let DB = require('./db')
 
+// mongodb connection
 mongoose.connect(DB.URI);
 let mongoDB = mongoose.connection;
 mongoDB.on('error',console.error.bind(console,'Connection Error'));

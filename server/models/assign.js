@@ -1,5 +1,6 @@
 let mongoose = require('mongoose');
 
+// mongobd datbase scheme
 let assignModel = mongoose.Schema({
   Assignment: String,
   Description: String,
